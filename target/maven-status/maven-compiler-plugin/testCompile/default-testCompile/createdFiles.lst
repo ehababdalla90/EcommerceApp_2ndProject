@@ -1,0 +1,10 @@
+org\example\StepDefinitions\D08_Wishlist.class
+org\example\StepDefinitions\D03_ChangeCurrency.class
+org\example\StepDefinitions\Hooks.class
+org\example\StepDefinitions\D02_registration.class
+org\example\StepDefinitions\D06_HomeSliders.class
+org\example\Runner\testRunner.class
+org\example\StepDefinitions\D01_Login.class
+org\example\StepDefinitions\D04_Search.class
+org\example\StepDefinitions\D07_FollowUs.class
+org\example\StepDefinitions\D05_HoverCategories.class

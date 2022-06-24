@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: org.example.Runner.testRunner
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 58.344 s <<< FAILURE! - in org.example.Runner.testRunner
+org.example.Runner.testRunner.runScenario  Time elapsed: 8.418 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/search?q=nokia] but found []
+

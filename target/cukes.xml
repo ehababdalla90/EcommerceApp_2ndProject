@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="57.344">
+<testcase classname="Login | user could be able to log in with valid email and password" name="user could log in with valid credentials" time="11.257">
+<system-out><![CDATA[Given user navigate to log in page..........................................passed
+And get current url.........................................................passed
+And user click on log in link...............................................passed
+When user fills email with valid data.......................................passed
+And user fills  password with valid data....................................passed
+And user clicks on log in button............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration | user should be able to sign up with new account" name="user could sign up with valid credentials" time="6.728">
+<system-out><![CDATA[And user navigate to home page..............................................passed
+And user click on register link.............................................passed
+And user select gender type.................................................passed
+And user fills your personal details with valid data........................passed
+And user selects date of birth..............................................passed
+And user fills your password with valid data................................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Switch currencies | logged user could switch between currencies US-Euro" name="logged user could switch between currencies" time="14.686">
+<system-out><![CDATA[Given user navigate to home.................................................passed
+And logged user choose Euro from dropdown menu..............................passed
+And loop in all products that has Euro sign.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="search for a product" name="user could search using product name" time="4.875">
+<system-out><![CDATA[Given user navigates to the website.........................................passed
+And user search on "Apple" in search box text field.........................passed
+And user could find relative "Apple" results................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F05HoverCategories | user could hover  on website categories and select a sub-category" name="user could hover website categories" time="11.216">
+<system-out><![CDATA[Given user could navigates to the website homepage..........................passed
+When user hovers category and selects a sub-category........................passed
+]]></system-out>
+</testcase>
+<testcase classname="F06HomeSliders | user could use home slider to navigate to a product" name="user could navigate to a product using home slider" time="8.418">
+<failure message="expected [https://demo.nopcommerce.com/search?q=nokia] but found []" type="java.lang.AssertionError"><![CDATA[Given user could navigates to the  homepage.................................passed
+When user could navigate Nokia products through homeSliders.................failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/search?q=nokia] but found []
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.StepDefinitions.D06_HomeSliders.navigateHomeSliders(D06_HomeSliders.java:22)
+	at ✽.user could navigate Nokia products through homeSliders(file:///C:/Users/Asmaa/IdeaProjects/EcommerceAppProject/src/main/resources/features/F06_HomeSliders.feature:5)
+]]></failure>
+</testcase>
+</testsuite>
